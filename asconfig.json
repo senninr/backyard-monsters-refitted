@@ -1,11 +1,12 @@
 {
-	"config": "flex",
+	"config": "air",
 	"type": "app",
 	"mainClass": "GAME",
  	"compilerOptions": {
 		"strict": false,
 		"warnings": false,
-		"output": "bin/bymr-stable.swf",
+		"language": "3",
+		"output": "bin/bymr-stable.air",
 		"source-path": [
 			"client/scripts"
 		],
@@ -18,9 +19,18 @@
 			"height": 670
 		},
 		"library-path": [
-			"playerglobal.swc"
+			"playerglobal.swc",
+			"airglobal.swc"
 		],
 		"use-network": true,
 		"static-link-runtime-shared-libraries": true
+	},
+	"airOptions": {
+		"output": "bin/bymr-stable.exe",
+		"signingOptions": {
+			"storetype": "pkcs12",
+			"keystore": "bin/self-signed-cert.p12",
+			"tsa": "http://timestamp.digicert.com"
+		}
 	}
 }

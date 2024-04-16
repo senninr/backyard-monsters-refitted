@@ -29,10 +29,10 @@
 		{
 			"label": "Build & Run: BYMR | Debug",
 			"type": "shell",
-			"command": "start",
+			"command": "adl",
 			"args": [
 				"",
-				"bin/bymr-stable.swf"
+				"air-manifest.xml"
 			],
 			"group": {
 				"kind": "build",
@@ -44,10 +44,9 @@
 		{
 			"label": "Build & Run: BYMR | Release",
 			"type": "shell",
-			"command": "start",
+			"command": "adl",
 			"args": [
-				"",
-				"bin/bymr-stable.swf"
+				"air-manifest.xml"
 			],
 			"group": {
 				"kind": "build",

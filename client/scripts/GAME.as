@@ -82,7 +82,7 @@ package
          loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, this.uncaughtErrorThrown);
          GLOBAL._baseURL = urls._baseURL;
          // u = String(GLOBAL._baseURL.split("/")[2]);
-         Security.allowDomain("*");
+         //Security.allowDomain("*"); // ToDo: Adobe Air expects this to be configured correctly (cannot be wildcard)
          SWFProfiler.init(stage, null);
          Console.initialize(stage);
          _contained = contained;
