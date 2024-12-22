@@ -26,7 +26,7 @@ const mikroOrmConfig = {
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   migrations: {
-    path: path.join(__dirname, "../src/database/migrations"),
+    path: path.join(__dirname, "./database/migrations"),
     pattern: /^[\w-]+\d+\.[j]s$/,
   },
 } as Parameters<typeof MikroORM.init<MariaDbDriver>>[0];
